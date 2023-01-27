@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>The Ultimate Spongebob Quiz</title>
+    <script src="quizproject.js"></script>
+    <link rel="stylesheet" type="text/css" href="quizproject.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Secular+One&display=swap"
+      rel="stylesheet"/>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icons/icon-192x192.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <meta name="theme-color" content="black">
+
+  </head>
+  <body onload="loadQuestion()">
+    <section id="lightbox" onclick="closeLightBox()" style="display: none">
+      <div id="message">This is the message</div>
+    </section>
+
+    
+
+    <main class="grid-container">
+      <header class="header">
+        <h1>The BEST Bread Quiz</h1>
+        <div id="question">Question:</div>
+        <div id="hint">Hint:</div>
+      </header>
+
+      <aside class="left">
+        <div>
+          <div class="options" id="a" onclick="markIt('a')">A.</div>
+          <div class="options" id="b" onclick="markIt('b')">B.</div>
+          <div class="options" id="c" onclick="markIt('c')">C.</div>
+          <div class="options" id="d" onclick="markIt('d')">D.</div>
+        </div>
+      </aside>
+
+
+      <figure class="right"><img id="image" src="/" alt="" /></figure>
+
+      <footer class="footer1">
+        <div id="hintbtn" onclick="hintBtn()">Hint Here!</div>
+      </footer>
+
+      <footer class="footer2">
+        <p>Your Score: <span id="score"></span></p>
+      </footer>
+    </main>
+  </body>
+</html>
